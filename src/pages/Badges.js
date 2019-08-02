@@ -3,9 +3,7 @@ import React from 'react';
 import './styles/Badges.css'
 import confLogo from '../images/platziconf-logo.svg'
 import  NavBar from '../components/NavBar'
-// import './styles/Badges.css';
-// import confLogo from '../images/badge-header.svg';
-import badgesList from '../components/badgesList';
+import BadgesList from '../components/badgesList'
 
 class Badges extends React.Component {
   // constructor(props) {
@@ -99,18 +97,7 @@ class Badges extends React.Component {
 
         <div className="Badges__list">
           <div className="Badges__container">
-            <badgesList badges={this.state.data}/>
-            <ul className="list-unstyled">
-                {this.state.data.map((badge)=>{
-                    return (
-                      <li key={badge.id}>
-                        <p>
-                          {badge.firstName}{badge.lastName}
-                        </p>
-                      </li>
-                    )
-                })}
-            </ul>
+            <BadgesList badges={this.state.data} />
           </div>  
         </div>      
       </div>

@@ -6,3 +6,36 @@
   margin-bottom: 1rem;
   color: #ffffff;
 }
+
+.container-list-g{
+  background: rgb(246, 246, 246);
+  -webkit-box-shadow: 7px 15px 43px -12px rgba(0,0,0,0.25);
+  -moz-box-shadow: 7px 15px 43px -12px rgba(0,0,0,0.25);
+  box-shadow: 7px 15px 43px -12px rgba(0,0,0,0.25);
+  border-radius: 20px;
+  padding: 10px 15px;
+  margin: 20px 0
+}
+
+.avatar-g  img{
+  border-radius: 100%;
+  width: 100%;
+}
+
+.info-g p:first-child{
+  font-weight: 900;
+  font-size: 24px;
+  color: black;
+}
+.info-g p:last-child{
+  font-weight: 200;
+  font-size: 18px;
+  color: black;
+}
+
+.info-g p{
+  color: rgb(48, 173, 125);
+  font-size: 14px;
+  font-weight: 800;
+  margin: 0;
+}
