@@ -1,5 +1,6 @@
 import React from 'react';
 import '../pages/styles/Navbar.css'
+import {Link} from 'react-router-dom'
 import logo from '../images/logo.svg'
 
 class NavBar extends React.Component{
@@ -7,11 +8,11 @@ class NavBar extends React.Component{
     return(
       <div className="Navbar">
           <div className="container-fluid">
-              <a href="/" className="Navbar_brand">
+              <Link to="/" className="Navbar_brand">
               <img src={logo} className="Navbar_brand-logo" alt="logo"/>
               <span className="font-weight-light">Platzi </span> 
               <span className="font-weight-bold">Conf</span>
-          </a>
+          </Link>
           </div>
       </div>
     )

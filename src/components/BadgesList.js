@@ -7,7 +7,7 @@ class badgesList extends React.Component{
         <ul className="list-unstyled">
             {this.props.badges.map((badge)=>{
                 return (
-                 <li class="container-list-g" key={badge.id}>
+                 <li className="container-list-g" key={badge.id}>
                      <div className="row">
                         <div className="col-3 avatar-g">
                             <img src={badge.avatarUrl} alt="avatar" />

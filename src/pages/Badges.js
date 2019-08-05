@@ -1,9 +1,8 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './styles/Badges.css'
-import confLogo from '../images/platziconf-logo.svg'
-import  NavBar from '../components/NavBar'
-import BadgesList from '../components/badgesList'
+import confLogo from '../images/platziconf-logo.svg';
+import BadgesList from '../components/BadgesList'
 
 class Badges extends React.Component {
   // constructor(props) {
@@ -78,7 +77,6 @@ class Badges extends React.Component {
 
     return (
       <div>
-        <NavBar/>
         <div className="Badges">
           <div className="Badges__hero">
             <div className="Badges__container">
@@ -89,9 +87,9 @@ class Badges extends React.Component {
 
         <div className="Badge__container">
           <div className="Badges__buttons">
-            <a href ="/badges/new" className="btn btn-primary">
+            <Link to="/badges/new" className="btn btn-primary">
               New Badge
-            </a>
+            </Link>
           </div>
         </div>
 
