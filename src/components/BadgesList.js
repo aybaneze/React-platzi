@@ -4,23 +4,25 @@ import './styles/badgeList.css'
 class badgesList extends React.Component{
     render(){
         return ( 
+            <div>
         <ul className="list-unstyled">
             {this.props.badges.map((badge)=>{
+                  console.log(badge,'hola')
                 return (
                  <li className="container-list-g" key={badge.id}>
                      <div className="row">
                         <div className="col-3 avatar-g">
-                            <img src={badge.avatarUrl} alt="avatar" />
+                            <img src={badge.image} alt="avatar" />
                         </div>
                         <div className="col-7 info-g">
                             <p>
-                            {badge.firstName}{badge.lastName}
+                            {badge.name}
                             </p>
                             <p>
-                                @{badge.twitter}
+                                @{badge.gender}
                             </p>
                             <p>
-                                {badge.jobTitle}
+                                {badge.species}
                             </p>
                         </div>  
                      </div>
@@ -29,7 +31,10 @@ class badgesList extends React.Component{
                  </li>
             )
           } ) }
-    </ul>)
+    </ul>
+
+    </div>
+    )
     }
 }
 
